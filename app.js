@@ -46,3 +46,31 @@ console.log(typeof numberVariable);
 // See on built-in objects
 const myNewName = new String("Tene");
 console.log(myNewName);
+
+// TYPE conversion
+const isString = "444";
+const isNumber = 444;
+
+console.log(isString + isNumber);
+
+// TYPE casting
+console.log(Number(isString));
+console.log(typeof String(isNumber) + String(isNumber));
+
+// 0 false, kõik muu on true
+const testNr = 3;
+console.log(Boolean(testNr));
+
+console.log(Number(isString) + isNumber);
+
+// COMPARISONS
+// Muutuja puhul on olulised: type ja väärtus, kui midagi võrdleme.
+
+// = ehk defineeri muutuja
+// == ehk väärtus. Siis ma võrdlen kahte väärtust
+// === ehk väärtus ja tüüp. Siis ma võrdlen väärtust ja tüüpi
+
+console.log("== ", isNumber == isString);
+console.log("=== ", isNumber === isString);
+
+// ARRAYS
