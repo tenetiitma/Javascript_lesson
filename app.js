@@ -74,3 +74,16 @@ console.log("== ", isNumber == isString);
 console.log("=== ", isNumber === isString);
 
 // ARRAYS
+// Arrays on index põhine. Reaalsuses on [0, 1, 2, 3, 4, 5, 6, 7] allantud näite puhul
+const testArray = [1, 2, 3, 4, 5, 6, 7, 8];
+// ARRAY LOOPIMINE - forEach, for, while... do
+// callback on () => {}
+testArray.forEach((number, index, acc) => {
+    console.log(`${number} on index kohal ${index} + ${acc}`);
+});
+
+for (let i = 0; i < testArray.length; i++) {
+    console.log("For Loop:", testArray[i]);
+}
+
+
